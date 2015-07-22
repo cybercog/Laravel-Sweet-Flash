@@ -16,9 +16,7 @@ Based on [SweetAlert](https://github.com/uxweb/sweet-alert) by [uxweb](https://g
 First, pull in the package through Composer.
 
 ```js
-"require": {
-    "draperstudio/laravel-sweet-flash": "~1.0"
-}
+composer require draperstudio/laravel-sweet-flash
 ```
 
 And then include the service provider within `app/config/app.php`.
