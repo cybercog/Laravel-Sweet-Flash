@@ -185,7 +185,6 @@ class Notifier
 
         return $this;
     }
-    
 
     /**
      * "Helper"-method for building alerts with a custom configuration.
