@@ -131,7 +131,7 @@ sweet()->config('title', 'Are you sure?')
        ->config('closeOnCancel', false)
        ->config('showConfirmButton', true)
        ->config('timer', null)
-       ->setCallback('function(isConfirm) {
+       ->callback('function(isConfirm) {
            if (isConfirm) {
                swal("Deleted!", "Your imaginary file has been deleted.", "success");
            } else {
