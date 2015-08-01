@@ -148,14 +148,20 @@ class Notifier
     /**
      * Set the value of an option in the configuration.
      *
-     * @param string $key
-     * @param mixed  $value
+     * @param mixed $key
+     * @param mixed $value
      *
      * @return $this
      */
-    public function config($key, $value)
+    public function config($key, $value = null)
     {
-        $this->config[$key] = $value;
+        if(is_array($key)) {
+            foreach ($key as $k => $v) {
+                $this->config($k, $v);
+            }
+        } else {
+            $this->config[$key] = $value;
+        }
 
         return $this;
     }
