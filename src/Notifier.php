@@ -185,4 +185,18 @@ class Notifier
 
         return $this;
     }
+    
+
+    /**
+     * "Helper"-method for building alerts with a custom configuration.
+     *
+     * @param array $config
+     *
+     * @return $this
+     */
+    public function custom($config)
+    {
+        return $this->config($config)
+                    ->commit();
+    }
 }
