@@ -155,7 +155,7 @@ class Notifier
      */
     public function config($key, $value = null)
     {
-        if(is_array($key)) {
+        if (is_array($key)) {
             foreach ($key as $k => $v) {
                 $this->config($k, $v);
             }
